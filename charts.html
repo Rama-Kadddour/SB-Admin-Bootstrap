@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.13.1/cr-1.6.1/r-2.4.0/sb-1.4.0/sp-2.1.0/datatables.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand ms-3 me-3" href="index.html">Start Bootstrap</a>
+            <button class="navbar-toggler ms-5"  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+              <span class="navbar-toggler-icon pb-4" style="height: 15px; width: 15px;"></span>
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark" style="width: 230px;"  data-bs-backdrop="static"  id="staticBackdrop" >
+              <div class="offcanvas-body">
+                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <button type="button" class="btn-close btn bg-light float-end" data-bs-dismiss="offcanvas"><span class="visually-hidden">Close</span></button>
+                <ul class="navbar-nav justify-content-end text-secondary">
+                    <p class="my-4" style="font-weight: bold; font-size: 13px;">CORE</p>
+                    <a class="nav-link" href="index.html"><svg width="25px" height="25px" viewBox="-4.8 -4.8 57.60 57.60" xmlns="http://www.w3.org/2000/svg" fill="#8a8585" stroke="#8a8585" stroke-width="0.00048000000000000007"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <title>dashboard</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <g> <path d="M26,19.4V14a2,2,0,0,0-4,0v5.4A5.1,5.1,0,0,0,19,24a5,5,0,0,0,10,0A5.1,5.1,0,0,0,26,19.4Z"></path> <path d="M24,2A22.1,22.1,0,0,0,2,24,21.6,21.6,0,0,0,8.3,39.4a1.9,1.9,0,0,0,2.8,0h0l3-3a2,2,0,0,0-2.8-2.8L9.8,35.1A19.2,19.2,0,0,1,6.1,26H8a2,2,0,0,0,0-4H6.1a18.5,18.5,0,0,1,3.8-9.2h0l1.4,1.3a1.9,1.9,0,0,0,2.8,0,1.9,1.9,0,0,0,0-2.8L12.8,9.9h0A18.5,18.5,0,0,1,22,6.1h0V8a2,2,0,0,0,4,0V6.1h0a18.5,18.5,0,0,1,9.2,3.8h0l-1.3,1.4a1.9,1.9,0,0,0,0,2.8,1.9,1.9,0,0,0,2.8,0l1.4-1.3h0A18.5,18.5,0,0,1,41.9,22H40a2,2,0,0,0,0,4h1.9a19.2,19.2,0,0,1-3.7,9.1l-1.5-1.5a2,2,0,1,0-2.8,2.8L37,39.5a2,2,0,0,0,2.7-.1A21.6,21.6,0,0,0,46,24,22.1,22.1,0,0,0,24,2Z"></path> </g> </g> </g> </g></svg>
+                        Dashboard
+                    </a>
+                    <p class="my-4" style="font-weight: bold; font-size: 13px;">INTERFACE</p>
+                      <a class="nav-link navbar-dark" href="#colla" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg width="25px" height="20px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#8a8585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="#8a8585"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <title id="layoutRightIconTitle">Layout Right</title> <rect width="18" height="18" x="3" y="3"></rect> <path d="M3 8L21 8M9 8L9 21"></path> </g></svg>
+                          Layouts
+                        <svg class="d-block float-end mt-2 me-2" width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="style=stroke"> <g id="arrow-short-right"> <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M8.20554 4.48407C7.92066 4.78477 7.93349 5.25947 8.23419 5.54434L14.0905 11.0924C14.6109 11.5855 14.6109 12.4143 14.0905 12.9073L8.2342 18.4554C7.9335 18.7403 7.92067 19.215 8.20554 19.5157C8.49041 19.8164 8.96511 19.8292 9.26581 19.5443L15.1221 13.9962C16.2671 12.9116 16.2671 11.0882 15.1221 10.0035L9.26581 4.45541C8.96511 4.17054 8.49041 4.18337 8.20554 4.48407Z" fill="#fff"></path> </g> </g> </g></svg>
+                      </a>
+                      <ul class="collapse dropdown-menu dropdown-menu-dark mt-3" id="colla" style="width: 230px; background-color: #212529;">
+                        <li><a class="nav-link" href="#">Static Navigation</a></li>
+                        <li><a class="nav-link" href="#">Light Sidenav</a></li>
+                      </ul>
+                        <a class="nav-link navbar-dark mt-3" href="#collapseOne" data-bs-toggle="collapse" aria-expanded="false">
+                          <svg class="mx-1" fill="#8a8585" width="22px" height="22px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <title>book-open</title> <path d="M30.879 5.111c-0.226-0.223-0.536-0.361-0.879-0.361-0 0-0 0-0 0h-0.014l-2.736 0.028v-2.778c-0-0.346-0.141-0.659-0.367-0.886v0c-0.238-0.21-0.546-0.344-0.885-0.364l-0.004-0c-0.277-0.020-0.601-0.031-0.927-0.031-3.478 0-6.655 1.285-9.084 3.407l0.016-0.014c-2.412-2.108-5.59-3.393-9.068-3.393-0.326 0-0.65 0.011-0.971 0.034l0.043-0.002c-0.027-0.002-0.059-0.004-0.090-0.004-0.318 0-0.603 0.142-0.795 0.367l-0.001 0.001c-0.227 0.226-0.368 0.54-0.368 0.886v2.778l-2.737-0.028c-0.009-0-0.020-0-0.031-0-0.337 0-0.642 0.138-0.86 0.362l-0 0c-0.229 0.227-0.371 0.541-0.371 0.889v24c0 0 0 0 0 0 0 0.69 0.559 1.249 1.249 1.249 0.216 0 0.42-0.055 0.597-0.152l-0.007 0.003c1.836-1.087 4.047-1.73 6.408-1.73 2.353 0 4.556 0.638 6.448 1.751l-0.060-0.032c0.034 0.016 0.078 0.032 0.122 0.046l0.009 0.002c0.048 0.023 0.106 0.045 0.166 0.063l0.009 0.002c0.018 0.005 0.034 0.016 0.052 0.019l0.002 0.002h0.006c0.031 0.006 0.062 0.012 0.093 0.016h0.004l0.005 0.002c0.041 0.005 0.088 0.008 0.136 0.008 0.003 0 0.006 0 0.009-0l0.001 0h0.002l0.001-0c0.042 0 0.084-0.002 0.126-0.006h0.002c0.061-0.007 0.114-0.017 0.166-0.029l-0.010 0.002h0.003c0.015-0.004 0.029-0.013 0.044-0.017 0.052-0.017 0.094-0.034 0.135-0.053l-0.008 0.003c0.061-0.020 0.112-0.040 0.16-0.063l-0.008 0.003c1.831-1.081 4.035-1.72 6.388-1.72 2.361 0 4.572 0.643 6.468 1.764l-0.059-0.032c0.171 0.093 0.374 0.148 0.59 0.148 0.69 0 1.249-0.559 1.249-1.249 0-0 0-0 0-0v0-24c0-0 0-0.001 0-0.001 0-0.347-0.142-0.661-0.371-0.888l-0-0zM3.25 28.033v-20.77l1.5 0.016v18.722c0 0.619 0.449 1.133 1.039 1.233l0.007 0.001c-0.988 0.225-1.838 0.5-2.655 0.839l0.108-0.040zM7.25 24.785v-21.494c0.054-0.001 0.117-0.002 0.181-0.002 2.878 0 5.475 1.204 7.315 3.136l0.004 0.004v20.635c-2.119-1.39-4.707-2.234-7.488-2.279l-0.012-0zM24.75 24.785c-2.793 0.045-5.381 0.889-7.554 2.313l0.054-0.033v-20.635c1.844-1.936 4.442-3.14 7.32-3.14 0.063 0 0.126 0.001 0.189 0.002l-0.009-0zM28.75 28.033c-0.709-0.3-1.56-0.574-2.437-0.777l-0.109-0.021c0.597-0.102 1.047-0.616 1.047-1.234v-18.722l1.5-0.016z"></path> </g></svg> 
+                          Pages
+                          <svg class="d-block float-end mt-2 me-2" width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="style=stroke"> <g id="arrow-short-right"> <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M8.20554 4.48407C7.92066 4.78477 7.93349 5.25947 8.23419 5.54434L14.0905 11.0924C14.6109 11.5855 14.6109 12.4143 14.0905 12.9073L8.2342 18.4554C7.9335 18.7403 7.92067 19.215 8.20554 19.5157C8.49041 19.8164 8.96511 19.8292 9.26581 19.5443L15.1221 13.9962C16.2671 12.9116 16.2671 11.0882 15.1221 10.0035L9.26581 4.45541C8.96511 4.17054 8.49041 4.18337 8.20554 4.48407Z" fill="#fff"></path> </g> </g> </g></svg>
+                        </a>
+                        <ul class="collapse dropdown-item dropdown-menu-dark mt-3" style="width: 212px; background-color: #212529;" id="collapseOne" >
+                          <a class="nav-link mb-2 me-2" href="#sub1" data-bs-parent="collapseOne" role="button" data-bs-toggle="dropdown">
+                            Authentication
+                            <svg class="d-block float-end mt-2 me-3" width="12px" height="12px" viewBox="6 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="style=stroke"> <g id="arrow-short-right"> <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M8.20554 4.48407C7.92066 4.78477 7.93349 5.25947 8.23419 5.54434L14.0905 11.0924C14.6109 11.5855 14.6109 12.4143 14.0905 12.9073L8.2342 18.4554C7.9335 18.7403 7.92067 19.215 8.20554 19.5157C8.49041 19.8164 8.96511 19.8292 9.26581 19.5443L15.1221 13.9962C16.2671 12.9116 16.2671 11.0882 15.1221 10.0035L9.26581 4.45541C8.96511 4.17054 8.49041 4.18337 8.20554 4.48407Z" fill="#fff"></path> </g> </g> </g></svg>
+                          </a>
+                          <ul class="collapse dropdown-menu dropdown-menu-dark mt-3" id="sub1" style=" width: 50px; background-color: #212529;">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="password.html">Forgot Password</a></li>
+                          </ul>
+                          <a class="nav-link me-3" href="sub2" data-bs-parent="collapseOne" role="button" data-bs-toggle="dropdown">
+                            Error
+                            <svg class="d-block float-end mt-2 me-2" width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="style=stroke"> <g id="arrow-short-right"> <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M8.20554 4.48407C7.92066 4.78477 7.93349 5.25947 8.23419 5.54434L14.0905 11.0924C14.6109 11.5855 14.6109 12.4143 14.0905 12.9073L8.2342 18.4554C7.9335 18.7403 7.92067 19.215 8.20554 19.5157C8.49041 19.8164 8.96511 19.8292 9.26581 19.5443L15.1221 13.9962C16.2671 12.9116 16.2671 11.0882 15.1221 10.0035L9.26581 4.45541C8.96511 4.17054 8.49041 4.18337 8.20554 4.48407Z" fill="#fff"></path> </g> </g> </g></svg>
+                          </a>
+                          <ul class="collapse dropdown-menu dropdown-menu-dark mt-3" id="sub2" style=" width: 50px; background-color: #212529;">
+                            <li><a class="dropdown-item " href="#">401 Page</a></li>
+                            <li><a class="dropdown-item" href="404.html">404 Page</a></li>
+                            <li><a class="dropdown-item" href="#">500 Page</a></li>
+                          </ul>
+                        </ul>
+                    
+                    <p class="my-4" style="font-weight: bold; font-size: 13px;">ADDONS</p>
+                    <li class="nav-item">
+                      <a class="nav-link mb-3" aria-current="page" href="charts.html">
+                        <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#8a8585"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"> <path d="M21 21H4.6C4.03995 21 3.75992 21 3.54601 20.891C3.35785 20.7951 3.20487 20.6422 3.10899 20.454C3 20.2401 3 19.9601 3 19.4V3M21 7L15.5657 12.4343C15.3677 12.6323 15.2687 12.7313 15.1545 12.7684C15.0541 12.8011 14.9459 12.8011 14.8455 12.7684C14.7313 12.7313 14.6323 12.6323 14.4343 12.4343L12.5657 10.5657C12.3677 10.3677 12.2687 10.2687 12.1545 10.2316C12.0541 10.1989 11.9459 10.1989 11.8455 10.2316C11.7313 10.2687 11.6323 10.3677 11.4343 10.5657L7 15M21 7H17M21 7V11" stroke="#8a8585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        Charts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mb-3" aria-current="page" href="tables.html">
+                            <svg width="23px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#8a8585"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_iconCarrier"><path d="M1 21h22V3H1zm5-1v-3h8v3zm8-8H6V9h8zm0 1v3H6v-3zm8 7h-7v-3h7zm0-4h-7v-3h7zm0-4h-7V9h7zM2 4h20v4H2zm0 5h3v3H2zm0 4h3v3H2zm0 4h3v3H2z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>
+                            Tables</a>
+                    </li>
+                </ul>
+                <br>
+                <div class="ps-3 pt-2" style="position:fixed; left:0; bottom: 0; height:70px; width: 230px; background-color: #343A40; color: rgba(211, 211, 211, 0.575); ">
+                    Logged in as:
+                    <br>
+                    <p style="font-weight: bold;">Start Bootstrap</p>
+                </div> 
+                </div>
+            </div>
+            <form class="ms-auto mb-2 mb-lg-0" role="search" class="me-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." aria-describedby="button-addon2"/>
+                        <button class="btn btn-primary" type="button" id="button-addon2" data-mdb-ripple-color="dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#fff" class="bi bi-search" viewBox="0 0 15 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+                </div>
+            </form>
+            <div class="me-4 ms-1">
+                <a class="nav-link dropdown-toggle" style="color: lightgray;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
+                    <svg class="btn-secondary" xmlns="http://www.w3.org/2000/svg" fill="#adb5bd" width="25" height="25" viewBox="-1 0 15 25"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                        <path xmlns="http://www.w3.org/2000/svg" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></a>
+                        <ul class="dropdown-menu bg-light dropdown-menu-end rounded" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item text-dark" href="#">Setting</a></li>
+                            <li><a class="dropdown-item text-dark" href="#">Activity Log</a></li>
+                            <li><hr class="dropdown-divider bg-secondary"></li>
+                            <li><a class="dropdown-item text-dark" href="#">Logout</a></li>
+                        </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid px-4 mt-5 pt-2">
+      <div class="row">
+        <nav aria-label="breadcrumb">
+          <h1 class="brand-nav mt-4 mb-2">Charts</h1>
+          <ol class="breadcrumb ">
+            <li class="breadcrumb-item active"><a href="index.html">Dashboard</a></li>
+            <li class="breadcrumb-item text-muted" aria-current="page">Charts</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+            <p class="card rounded d-block pb-5 p-3 my-2">Chart.js is a third party plugin that is used to generate the charts in this template. The charts below have been customized - for further customization options, please visit the official
+                <a href="https://datatables.net/">Chart.js documentation.</a></p>
+      </div>
+      <div class="row my-1">
+        <div class="col">
+        <div class="card mb-4" >
+            <div class="card-header">
+                <svg width="20px" height="20px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>chart-area-solid</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M41.9,33.3,36,18.4a1.9,1.9,0,0,0-2.7-1.1l-7.7,4.1a.9.9,0,0,1-1.1-.1L15.4,10.6A2,2,0,0,0,12,12V36H40A2.1,2.1,0,0,0,41.9,33.3Z"></path> <path d="M42,40H8V6A2,2,0,0,0,4,6V44H42a2,2,0,0,0,0-4Z"></path> </g> </g> </g></svg>
+                Area Chart Example
+            </div>
+            <div class="card-body">
+                <canvas class="" id="lineChart"  height="90px"></canvas>
+            </div>
+            <div class="card-footer text-muted small">
+                Updated yesterday at 11:59 PM
+            </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-12">
+            <div class="card" >
+                <div class="card-header">
+                    <svg width="20px" height="20px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>chart-bar-horizontal-solid</title> <g id="Layer_2" data-name="Layer 2"> <g id="invisible_box" data-name="invisible box"> <rect width="48" height="48" fill="none"></rect> </g> <g id="icons_Q2" data-name="icons Q2"> <path d="M6,4H6A2,2,0,0,1,8,6V42a2,2,0,0,1-2,2H6a2,2,0,0,1-2-2V6A2,2,0,0,1,6,4Zm6,30v4H28a2,2,0,0,0,2-2h0a2,2,0,0,0-2-2Zm0-24v4H42a2,2,0,0,0,2-2h0a2,2,0,0,0-2-2Zm0,16v4H34a2,2,0,0,0,2-2h0a2,2,0,0,0-2-2Zm0-8v4H25a2,2,0,0,0,2-2h0a2,2,0,0,0-2-2Z"></path> </g> </g> </g></svg>
+                    Bar Chart Example
+                </div>
+                <div class="card-body">
+                  <canvas class="" id="barChart"  height="150px"></canvas>
+                </div>
+                <div class="card-footer text-muted small">
+                  Updated yesterday at 11:59 PM
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-12">
+          <div class="card" >
+              <div class="card-header">
+                <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.4800000000000001"></g><g id="SVGRepo_iconCarrier"><path d="M22,10.972H13.028V2A10.026,10.026,0,0,1,22,10.972ZM5.682,19.736A10.023,10.023,0,0,0,22,12.977H12.44Zm5.341-8.176V2A10.023,10.023,0,0,0,4.264,18.318Z"></path></g></svg>                  Pie Chart Example
+              </div>
+              <div class="card-body">
+                <canvas class="" id="pieChart"  height="150px"></canvas>
+              </div>
+              <div class="card-footer text-muted small">
+                Updated yesterday at 11:59 PM
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+      
+
+    <footer class="text-secondary mt-5" >
+      <div class="d-flex px-3 bg-light">
+          <div class="mb-3 p-2">Copyright © 2023: Rama Kaddour</div>
+          <div class="ms-auto mb-3 p-2"><a href="index.html">Privacy Policy</a> . <a href="index.html">Terms & Conditions</a></div>
+      </div>
+    </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+      <script>
+        var gx = document.getElementById("pieChart").getContext("2d");
+          var myChart = new Chart(gx, {
+            type: "pie", 
+            data : {
+            labels: [
+              'Blue',
+              'Red',
+              'Yellow',
+              'Green'
+            ],
+            datasets: [{
+              label: 'My First Dataset',
+              data: [12.21, 15.58, 11.25, 8.32],
+              backgroundColor: [
+                '#006FE6',
+                '#DC3545',
+                '#FFC107',
+                '#28A745'
+              ],
+              hoverOffset: 4
+            }]
+          }
+          });
+          var ctx = document.getElementById("lineChart").getContext("2d");
+          var myChart = new Chart(ctx, {
+            type: "line",
+            data: {
+              labels: [
+                "Mar1",
+                "Mar2",
+                "Mar3",
+                "Mar4",
+                "Mar5",
+                "Mar6",
+                "Mar7",
+                "Mar8",
+                "Mar9",
+                "Mar10",
+                "Mar11",
+                "Mar12",
+                "Mar13",
+              ],
+              datasets: [
+                {
+                  label: "Sessions",
+                  data: [{x: 'Mar1', y: 10000}, {x: 'Mar2', y: 30162}, {x: 'Mar3', y: 26263}, {x: 'Mar4', y: 18394}, {x: 'Mar5', y: 18287}, {x: 'Mar6', y: 28682}, {x: 'Mar7', y: 31274}, {x: 'Mar8', y: 33259}, {x: 'Mar9', y: 25849}, {x: 'Mar10', y: 24159}, {x: 'Mar11', y: 32651}, {x: 'Mar12', y: 31984}, {x: 'Mar13', y: 38451}],
+                  backgroundColor: "#CCE3F7",
+                  borderColor: "#0275D8",
+                  borderWidth: 3,
+                  pointStyle: 'circle',
+                  pointRadius: 6,
+                  pointBorderColor: "#fff",
+                  pointBackgroundColor: "#0275D8",
+                  pointBorderwidth: "1px"
+                },
+                
+              ],
+            },
+            options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                    min:0,
+                    max: 40000,
+                    stepSize: 10000
+                }
+                }]
+            },
+            tooltips: {
+                callbacks: {
+                  label: function(tooltipItem) {
+                          return tooltipItem.yLabel;
+                  }
+                }
+            }
+        }
+          });
+  
+  
+          var ctxB = document.getElementById("barChart").getContext('2d');
+          var myBarChart = new Chart(ctxB, {
+            type: 'bar',
+            data: {
+              labels: [
+                        "January",
+                        "February",
+                        "March",
+                        "April",
+                        "May",
+                        "June",
+                      ],
+              datasets: [{
+                label: 'Revenue',
+                data: [4215, 5312, 6251, 7841, 9821, 14984],
+                backgroundColor: ["#0275D8", "#0275D8" , "#0275D8" , "#0275D8" , "#0275D8", "#0275D8" ],
+                borderWidth: 1
+              }]
+            },
+            options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                yAxes: [{
+                    ticks: {
+                    min:0,
+                    max: 15000,
+                    stepSize: 5000
+                }
+                }]
+            },
+            tooltips: {
+                callbacks: {
+                  label: function(tooltipItem) {
+                          return tooltipItem.yLabel;
+                  }
+                }
+            }
+        }
+          });
+      </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
