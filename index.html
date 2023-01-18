@@ -194,7 +194,7 @@
                         DataTable Example
                     </div>
                     <div class="card-body">
-                        <table id="example" class="hover cell-border responsive mw-100"  >
+                        <table id="example" class="hover cell-border responsive mw-100">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -684,9 +684,9 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.13.1/cr-1.6.1/r-2.4.0/sb-1.4.0/sp-2.1.0/datatables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $('#example').DataTable();
-      });
+      $('#example').DataTable( {
+    "pagingType": "numbers"
+        } );
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
     <script>
